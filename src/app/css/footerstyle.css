@@ -1,0 +1,25 @@
+/* Footer Style */
+
+.site-footer {
+    height: 100px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Push footer to below the screen */
+
+main {
+    min-height: 100vh;
+}
+
+#made-by-arjun {
+    /* Place div, define size and position */
+    height: 20px;
+    position: absolute;
+    right: 0;
+    margin: 0 28px;
+    /* Implement colour */
+    color: rgb(126, 125, 125);
+}

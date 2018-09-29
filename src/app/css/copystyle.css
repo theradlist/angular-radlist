@@ -1,0 +1,75 @@
+/* Copy Style (style of text) */
+
+@import url("https://use.typekit.net/kmt3uyl.css");
+body {
+    color: var(--gray);
+    font-family: 'nimbus-sans', sans-serif;
+    line-height: 1.278;
+    -webkit-transition: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+h1 {
+    font-family: "eloquent-jf-pro", serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+h1.big-text {
+    font-size: 3vw;
+}
+
+h1.big-text i {
+    color: var(--red);
+}
+
+@media all and (max-width: 1160px) {
+    h1.big-text {
+        font-size: 5vw;
+        margin-left: 10px; 
+    }
+}
+
+@media all and (max-width:850px) {
+    h1.big-text {
+        font-size: 7vw;
+    }
+}
+
+p {
+    margin-top: 0
+}
+
+.signature {
+    color: var(--lightgray);
+    font-size: smaller;
+    margin-left: 5px;
+}
+
+.site-footer p {
+    font-size: small;
+    margin: 15px;
+}
+
+/* Link style */
+a.red,
+h1 a {
+    color: var(--red);
+    font-weight: normal;
+}
+
+a.red:hover,
+h1 a:hover {
+    color: var(--darkred); 
+}
+
+a {
+    color: var(--lightgray);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--gray);
+}

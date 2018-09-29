@@ -1,0 +1,93 @@
+.map {
+    height: 500px;
+    width: 60%;
+    position: relative;
+    padding-bottom: 0px;
+}
+
+#map {
+    height: 100%;
+}
+
+.map .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), #fff 65%);
+}
+
+.map .highlight-card {
+    z-index: 2;
+    position: absolute;
+    min-height: 30%;
+    width: 30%;
+    background: #F75648;
+    color: white;
+    /* border-radius: 4px; */
+    top: 80%;
+    left: 60%;
+    /* position: relative; */
+    margin: .5rem 0 1rem 0;
+    /* background-color: #fff; */
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    border-radius: 2px;
+}
+
+.map .highlight-card .card-content {
+    padding: 24px 24px 0;
+    border-radius: 0 0 2px 2px;
+    border-bottom: none; 
+}
+
+.map .highlight-card .card-content .card-title {
+    display: block;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.map .highlight-card .card-content p {
+    margin: 0;
+}
+
+.map .highlight-card .card-action {
+    background-color: inherit;
+    /* border-top: 1px solid rgba(160, 160, 160, 0.2); */
+    position: relative;
+    padding: 16px 24px;
+    text-align: right; 
+}
+
+@media all and (max-width: 1024px) {}
+
+@media all and (max-width: 839px) {
+    .map {
+        width: 90%;
+    }
+    .map .highlight-card {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .map {
+        width: 100%;
+    }
+    .map .overlay {
+        background: linear-gradient(to bottom, #fff 5%, rgba(0, 0, 0, 0), #fff 90%);
+    }
+    .map .highlight-card {
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .map.section {
+        margin-bottom: 150px; 
+    }
+}
