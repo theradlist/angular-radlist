@@ -1,3 +1,9 @@
+#filters {
+    position: relative;
+    float: left;
+    width: 20%;
+}
+
 /* The search field */
 #filters input, 
 .nav-actions input {
@@ -57,4 +63,137 @@
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: block;
+}
+
+.filter-links {
+  position: relative;
+  padding-left: 25px
+}
+
+.filter-links {
+  margin-bottom: 30px
+}
+
+#filters {
+  width: 16.25%;
+  max-width: 180px;
+  height: calc(100vh - 110px);
+  min-height: 560px;
+  float: left;
+  margin: 0;
+  clear: right;
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  position: absolute;
+  z-index: 5
+}
+
+#filters .title {
+  width: 100%;
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12.5px;
+  letter-spacing: .1em;
+  margin-bottom: 5px;
+  font-size: 12.5px;
+  line-height: 1.15;
+  opacity: 1;
+  -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+  -ms-transition: opacity .25s linear;
+  -o-transition: opacity .25s linear;
+  transition: opacity .25s linear
+}
+
+#filters a {
+  position: relative;
+  display: block;
+  margin: 0 0 5px;
+  font-size: 12.5px;
+  letter-spacing: .05em;
+  line-height: 1;
+  font-weight: 100;
+  color: #111;
+  opacity: 1;
+  -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+  -ms-transition: opacity .25s linear;
+  -o-transition: opacity .25s linear;
+  transition: opacity .25s linear
+}
+
+#filters a:not(.active) {
+  color: var(--gray)
+}
+
+#filters a:not(.active):hover {
+  color: #000
+}
+
+#filters a:last-of-type {
+  margin-right: 0
+}
+
+@media (min-width:1401px) {
+  .filter-links {
+    padding-left: 0
+  }
+}
+
+@media (max-width:1200px) {
+  #filters {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 15px 0 15px;
+    margin: 0 auto;
+    float: none
+  }
+
+  #filters .title {
+    display: none
+  }
+
+  #filters div:nth-child(even) .filter-links {
+    float: right;
+    margin-bottom: 0;
+  }
+
+  #filters div:nth-child(odd) .filter-links {
+    float: left;
+    margin-bottom: 0;
+    width: 49%;
+    padding-left: 0;
+  }
+
+  #filters div:nth-child(odd) .filter-links a {
+    padding: 0;
+    margin: 0 15px 0 0
+  }
+
+  #filters:after {
+    content: '';
+    clear: both;
+    display: table
+  }
+
+  #filters a {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 15px;
+    vertical-align: top
+  }
+}
+
+@media (max-width:767px) {
+  #filters {
+    display: none
+  }
 }
