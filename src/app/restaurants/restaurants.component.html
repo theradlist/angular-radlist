@@ -1,20 +1,6 @@
 <div id="item-list" class="grid">
   <div id="list-places">
-    <div *ngIf="selectedRestaurant" class="card-item col-xs-12" style="background: var(--lightred); color: var(--verylightgray) !important;">
-      <div class="wrapper">
-        <div class="info-column">
-          <div class="medium-show">
-            <div class="player-main">
-              <h3>{{selectedRestaurant.name | uppercase}}</h3>
-              <h4>
-                <strong>{{selectedRestaurant.shortDesc}}</strong>, {{selectedRestaurant.type}}
-              </h4>
-              <p>{{selectedRestaurant.desc}}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-selected-restaurant [r]="selectedRestaurant"></app-selected-restaurant>
     <div *ngFor="let restaurant of restaurants" [class.selected]="restaurant === selectedRestaurant" (click)="onSelect(restaurant)" class="card-item col-xs-12">
       <div class="wrapper">
         <div class="info-column">

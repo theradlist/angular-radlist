@@ -1,0 +1,15 @@
+<div *ngIf="r" class="card-item col-xs-12" style="background: var(--lightred); color: var(--verylightgray) !important;">
+  <div class="wrapper">
+    <div class="info-column">
+      <div class="medium-show">
+        <div class="player-main">
+          <h3>{{r.name | uppercase}}</h3>
+          <h4>
+            <strong>{{r.shortDesc}}</strong>, {{r.type}}
+          </h4>
+          <p>{{r.desc}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
