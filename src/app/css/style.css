@@ -10,6 +10,16 @@
     --bglightgray: #f5f5f5;
 }
 
+button.CTA {
+    padding: 19px 21px 15px 21px;
+    background-color: var(--red); 
+    color: var(--verylightgray); 
+    font-family: "eloquent-jf-pro", serif;
+    font-style: italic; 
+    font-size: medium; 
+    border-radius: 15px; 
+}
+
 /* UNDO LISTSECTION.CSS:2695 */
 .toggle-card:not(.maps-icon) {
     display: none; 

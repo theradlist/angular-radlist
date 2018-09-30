@@ -44,7 +44,6 @@ p {
 .signature {
     color: var(--lightgray);
     font-size: smaller;
-    margin-left: 5px;
 }
 
 .site-footer p {
