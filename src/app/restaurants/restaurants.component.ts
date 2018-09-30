@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Restaurant } from './../restaurant';
-import { RESTAURANTS } from './../mock-restaurants';
+import { RestaurantService } from './../restaurant.service';
 
 @Component({
   selector: 'app-restaurants',
@@ -10,9 +10,15 @@ import { RESTAURANTS } from './../mock-restaurants';
 })
 export class RestaurantsComponent implements OnInit {
 
-  restaurants = RESTAURANTS; 
-
+  restaurants: Restaurant[]; 
   selectedRestaurant: Restaurant;
+
+  constructor(private restaurantService: RestaurantService) { }
+
+  ngOnInit() {
+    this.getRestaurants(); 
+  }
+
   onSelect(restaurant: Restaurant): void {
     this.selectedRestaurant = restaurant;
     window.scroll({
@@ -22,9 +28,8 @@ export class RestaurantsComponent implements OnInit {
     });
   }
 
-  constructor() { }
-
-  ngOnInit() {
+  getRestaurants(): void {
+    this.restaurantService.getRestaurants().subscribe(r => this.restaurants = r); 
   }
 
 }
