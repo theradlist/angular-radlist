@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Restaurant } from './../restaurant';
+import { RESTAURANTS } from './../mock-restaurants';
 
 @Component({
   selector: 'app-restaurants',
@@ -9,13 +10,16 @@ import { Restaurant } from './../restaurant';
 })
 export class RestaurantsComponent implements OnInit {
 
-  restaurant: Restaurant = {
-    id: 1,
-    name: 'Dorinku',
-    desc: "Creative takes on Japanese street fare, from sushi to ramen & beef, in a chic space with a full bar.",
-    Gmaps: "https://goo.gl/maps/fzex6Ps8uhy", 
-    cuisine: "Asian",
-    type: "Restaurant"
+  restaurants = RESTAURANTS; 
+
+  selectedRestaurant: Restaurant;
+  onSelect(restaurant: Restaurant): void {
+    this.selectedRestaurant = restaurant;
+    window.scroll({
+      top: 400,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 
   constructor() { }

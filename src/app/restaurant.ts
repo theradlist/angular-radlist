@@ -1,8 +1,8 @@
 export class Restaurant {
-    id: number;
+    id: string;
     name: string;
+    shortDesc: string;
     desc: string; 
     Gmaps: string; 
-    cuisine: string;
     type: string;
 }
