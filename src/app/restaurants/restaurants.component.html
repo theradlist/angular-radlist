@@ -7,7 +7,8 @@
           <h4>
             <strong>{{restaurant.type}} | {{restaurant.cuisine}}</strong>
           </h4>
-          <p>{{restaurant.desc}}</p>
+          <p>{{restaurant.id}} {{restaurant.desc}}</p>
+          <p><input [(ngModel)]="restaurant.id" placeholder="id"></p>
         </div>
       </div>
       <div>
