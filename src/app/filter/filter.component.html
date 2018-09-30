@@ -1,0 +1,65 @@
+<div id="filters">
+	<!-- <div class="size-filter">
+		<div class="title">How Much Do You
+			<br> Want to Know?
+		</div>
+		<div class="filter-links size-toggle">
+			<a href="#" class=" compact" data-size="small" onclick="changeSize({'name':'compact', 'class':'small'})">
+				<span>Skim</span>
+			</a>
+			<a href="#" class="active  default" data-size="medium" onclick="changeSize({'name':'default', 'class':'medium'})">
+				<span>Peruse</span>
+			</a>
+			<a href="#" class=" detailed" data-size="large" onclick="changeSize({'name':'detailed', 'class':'large'})">
+				<span>Deep Dive</span>
+			</a>
+		</div>
+	</div> -->
+	<div class="type-filter">
+		<div class="title">Sort By Type</div>
+		<div class="filter-links type-toggle">
+			<a href="#" class="active filter-all" data-filter="All" onclick="filterType({'name':'filter-all', 'class':'all'})">
+				<span>All</span>
+			</a>
+			<a href="#" class="filter-restaurant" data-filter="Restaurant" onclick="filterType({'name':'filter-restaurant', 'class':'restaurant'})">
+				<span>Restaurant</span>
+			</a>
+			<a href="#" class="filter-bar" data-filter="Bar" onclick="filterType({'name':'filter-bar', 'class':'bar'})">
+				<span>Bar</span>
+			</a>
+			<a href="#" class="filter-cafe" data-filter="Cafe" onclick="filterType({'name':'filter-cafe', 'class':'cafe'})">
+				<span>Cafe</span>
+			</a>
+			<!--<a href="#" class="filter-fast-food" data-filter="Fast Food" onclick="filterType({'name':'filter-fast-food', 'class':'fast-food'})">
+				<span>Fast Food</span>
+			</a>
+			<a href="#" class="filter-dessert" data-filter="Dessert" onclick="filterType({'name':'filter-dessert', 'class':'dessert'})">
+				<span>Dessert</span>
+			</a> -->
+		</div>
+	</div>
+	<div class="cuisine-filter">
+		<div class="title">Sort By Cuisine</div>
+		<div class="filter-links cuisine-toggle">
+			<i>Cuisine Filter Coming Soon</i>
+		</div>
+	</div>
+	<div class="location-filter">
+		<div class="title">Sort By Location</div>
+		<div class="filter-links location-toggle">
+			<i>Location Filter Coming Soon</i>
+		</div>
+	</div>
+	<div *ngIf="filterservice.filter.length">
+		<div class="title">Filter messages
+			<button (click)="filterservice.clear()" class="">
+				<span>Clear</span>
+			</button>
+		</div>
+		<div *ngFor='let message of filterservice.filter'>
+			<div class="filter-links location-toggle">
+				<i>{{message}}</i>
+			</div>
+		</div>
+	</div>
+</div>
