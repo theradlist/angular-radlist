@@ -1,0 +1,112 @@
+/* top wrapper */
+  .top.wrapper {
+    box-sizing: border-box;
+    /* padding-bottom: 200px; */
+    padding-left: 185px;
+    padding-top: 225px;
+    position: relative
+  }
+
+  @media all and (max-width:1200px) {
+    .top.wrapper {
+      padding-left: 160px;
+      padding-bottom: 150px
+    }
+  }
+
+  @media all and (max-width:850px) {
+    .top.wrapper {
+      padding-left: 135px
+    }
+  }
+
+  @media all and (max-width:700px) {
+    .top.wrapper {
+      padding-top: 160px;
+      padding-left: 100px;
+      padding-bottom: 100px
+    }
+  }
+
+  @media all and (max-width:600px) {
+    .top.wrapper {
+      padding-top: 160px;
+      padding-left: 80px
+    }
+  }
+
+  @media all and (max-width:500px) {
+    .top.wrapper {
+      padding-top: 120px;
+      padding-left: 36px
+    }
+  }
+
+  @media all and (max-width:480px) {
+    .top.wrapper {
+      padding-top: 130px;
+    }
+  }
+
+/* text-container */
+  .text-container {
+    max-width: 600px;
+    padding-right: 50px; 
+    margin-bottom: 51px;
+    margin-left: 30px;
+    position: relative;
+    image-rendering: optimizeQuality
+  }
+
+  @media all and (max-width:1024px) {
+    .text-container {
+      max-width: 500px
+    }
+  }
+
+  @media all and (max-width:500px) {
+    .text-container {
+      padding-right: 50px
+    }
+  }
+
+/* header */
+  h1 {
+    font: var(--headerfont); 
+    font-size: 2em;
+    margin: .67em 0
+  }
+
+  h1.big-text {
+    font-size: 3vw;
+  }
+
+  h1 i {
+    color: var(--red);
+  }
+
+  @media all and (max-width: 1160px) {
+    h1.big-text {
+      font-size: 5vw;
+    }
+  }
+
+  @media all and (max-width:850px) {
+    h1.big-text {
+      font-size: 7vw;
+    }
+  }
+
+p {
+  margin-top: 0
+}
+
+button.CTA {
+  padding: 19px 21px 15px 21px;
+  background-color: var(--red);
+  color: var(--verylightgray);
+  font-family: "eloquent-jf-pro", serif;
+  font-style: italic;
+  font-size: medium;
+  border-radius: 15px;
+}
