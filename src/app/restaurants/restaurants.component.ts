@@ -38,14 +38,8 @@ export class RestaurantsComponent implements OnInit {
   }
 
   getRestaurants(): void {
-    console.log("hi");
     const type: string = this.route.snapshot.paramMap.get('type');
     this.restaurantService.getRestaurantsWithFilter(type).subscribe(r => this.restaurants = r); 
-    // if (type) {
-    //   this.restaurantService.getRestaurantsWithFilter(type).subscribe(r => this.restaurants = r); 
-    // } else {
-    //   this.restaurantService.getRestaurants().subscribe(r => this.restaurants = r); 
-    // }
   }
 
 }
