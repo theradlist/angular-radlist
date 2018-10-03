@@ -1,0 +1,4 @@
+.card-item {
+  background: var(--lightred);
+  color: var(--verylightgray) !important;
+}
