@@ -17,4 +17,14 @@ export class RestaurantService {
     this.filterservice.add("hiya"); 
     return of(RESTAURANTS); 
   }
+
+  getRestaurantsWithFilter(type: string): Observable<Restaurant[]> {
+    if (type) {
+      this.filterservice.add("Filtering for spots that are " + type);
+      return of(RESTAURANTS.filter(r => 0 == r.type.toUpperCase().localeCompare(type.toUpperCase()))); 
+    } else {
+      return of(RESTAURANTS);
+    }
+  }
+
 }

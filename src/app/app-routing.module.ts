@@ -7,7 +7,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: LandingPageComponent },
-  { path: 'list', component: RestaurantsComponent }
+  { path: 'list', component: RestaurantsComponent },
+  { path: 'list/:type', component: RestaurantsComponent }
 ];
 
 @NgModule({

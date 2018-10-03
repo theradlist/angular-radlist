@@ -4,13 +4,13 @@
 			<br> Want to Know?
 		</div>
 		<div class="filter-links size-toggle">
-			<a href="#" class=" compact" data-size="small" onclick="changeSize({'name':'compact', 'class':'small'})">
+			<a routerLink="/list" class=" compact" data-size="small" onclick="changeSize({'name':'compact', 'class':'small'})">
 				<span>Skim</span>
 			</a>
-			<a href="#" class="active  default" data-size="medium" onclick="changeSize({'name':'default', 'class':'medium'})">
+			<a routerLink="/list" class="active  default" data-size="medium" onclick="changeSize({'name':'default', 'class':'medium'})">
 				<span>Peruse</span>
 			</a>
-			<a href="#" class=" detailed" data-size="large" onclick="changeSize({'name':'detailed', 'class':'large'})">
+			<a routerLink="/list" class=" detailed" data-size="large" onclick="changeSize({'name':'detailed', 'class':'large'})">
 				<span>Deep Dive</span>
 			</a>
 		</div>
@@ -18,24 +18,24 @@
 	<div class="type-filter">
 		<div class="title">Sort By Type</div>
 		<div class="filter-links type-toggle">
-			<a href="#" class="active filter-all" data-filter="All" onclick="filterType({'name':'filter-all', 'class':'all'})">
+			<a routerLink="/list" class="active filter-all">
 				<span>All</span>
 			</a>
-			<a href="#" class="filter-restaurant" data-filter="Restaurant" onclick="filterType({'name':'filter-restaurant', 'class':'restaurant'})">
+			<a routerLink="/list/restaurant" class="filter-restaurant">
 				<span>Restaurant</span>
 			</a>
-			<a href="#" class="filter-bar" data-filter="Bar" onclick="filterType({'name':'filter-bar', 'class':'bar'})">
+			<a routerLink="/list/bar" class="filter-bar">
 				<span>Bar</span>
 			</a>
-			<a href="#" class="filter-cafe" data-filter="Cafe" onclick="filterType({'name':'filter-cafe', 'class':'cafe'})">
+			<a routerLink="/list/cafe" class="filter-cafe">
 				<span>Cafe</span>
 			</a>
-			<!--<a href="#" class="filter-fast-food" data-filter="Fast Food" onclick="filterType({'name':'filter-fast-food', 'class':'fast-food'})">
+			<!--<a routerLink="/list/fastfood" class="filter-fast-food">
 				<span>Fast Food</span>
-			</a>
-			<a href="#" class="filter-dessert" data-filter="Dessert" onclick="filterType({'name':'filter-dessert', 'class':'dessert'})">
-				<span>Dessert</span>
 			</a> -->
+			<a routerLink="/list/dessert" class="filter-dessert">
+				<span>Dessert</span>
+			</a>
 		</div>
 	</div>
 	<div class="cuisine-filter">
