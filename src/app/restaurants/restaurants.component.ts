@@ -6,6 +6,7 @@ import { RestaurantService } from './../restaurant.service';
   selector: 'app-restaurants',
   templateUrl: './restaurants.component.html',
   styleUrls: ['./restaurants.component.css',
+              './../css/style.css',
               './../css/listsection.css']
 })
 export class RestaurantsComponent implements OnInit {
