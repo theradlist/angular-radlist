@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css',
               './css/style.css',
               './css/copystyle.css', 
-              './css/listsection.css']
+              './css/listsection.css', 
+              './css/footerstyle.css']
 })
 export class AppComponent {
   title = 'This is TheRadList';
